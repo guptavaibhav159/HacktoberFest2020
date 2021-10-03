@@ -49,9 +49,13 @@ body {
 .center-timer {
   display: block;
   margin: 5rem auto;
-
   justify-content: center;
   text-align: center;
+  animation: centertimer 4s cubic-bezier(.8,0,.2,1) infinite;
+}
+@keyframes centertimer {
+	80% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
 }
 
 #t1 {
